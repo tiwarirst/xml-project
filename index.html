@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsXML — News Aggregator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       HEADER
+  ══════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-main">
+
+      <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.37 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.69 5.69l.76-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+        </svg>
+        <span class="logo-name">News<strong>XML</strong></span>
+      </div>
+
+      <div class="search-wrap">
+        <svg class="search-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search articles…" autocomplete="off" />
+        <button id="clearSearch" class="clear-btn" style="display:none" title="Clear search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="hdr-right">
+        <span class="kbd-hint">Ctrl K</span>
+        <button id="themeToggle" class="icon-btn" title="Toggle theme" aria-label="Toggle dark mode">
+          <svg class="ico-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="ico-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Category Navigation -->
+    <nav class="cat-nav" role="navigation" aria-label="News categories">
+      <div class="cat-nav-inner">
+        <button class="cat-tab active" data-cat="all">
+          All <span class="tab-pill" id="count-all">20</span>
+        </button>
+        <button class="cat-tab" data-cat="Technology">
+          Technology <span class="tab-pill" id="count-Technology">5</span>
+        </button>
+        <button class="cat-tab" data-cat="World">
+          World <span class="tab-pill" id="count-World">5</span>
+        </button>
+        <button class="cat-tab" data-cat="Sports">
+          Sports <span class="tab-pill" id="count-Sports">5</span>
+        </button>
+        <button class="cat-tab" data-cat="India">
+          India <span class="tab-pill" id="count-India">5</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search Alert -->
+  <div class="search-alert" id="searchResultsBar" style="display:none">
+    <div class="sa-inner">
+      <span id="searchResultsText"></span>
+      <button class="sa-clear" onclick="window.clearSearch()">Clear search</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       MAIN
+  ══════════════════════════════════ -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Page Meta -->
+      <div class="page-meta">
+        <div class="pm-left">
+          <h1 class="page-heading">Top Stories</h1>
+          <p class="page-sub">
+            <span id="articleCount">20 articles</span>
+            &nbsp;·&nbsp; 4 XML feeds &nbsp;·&nbsp; Transformed via XSLT
+          </p>
+        </div>
+        <div class="pm-badges">
+          <span class="tech-pill">XML</span>
+          <span class="tech-pill">XSLT</span>
+          <span class="tech-pill">XPath</span>
+          <span class="tech-pill">RSS</span>
+        </div>
+      </div>
+
+      <!-- News Grid -->
+      <div class="news-grid" id="newsGrid" role="main" aria-live="polite">
+        <!-- Cards injected via XSLT -->
+      </div>
+
+      <!-- No Results -->
+      <div class="empty-state" id="noResults" style="display:none">
+        <div class="empty-ico">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".35">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <h3>No articles found</h3>
+        <p>Try different keywords or select another category</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════
+       XML SOURCE MODAL
+  ══════════════════════════════════ -->
+  <div class="modal-bg" id="modalOverlay" style="display:none" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div class="modal-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+          <span id="modalTitle">XML Source</span>
+        </div>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <pre class="modal-code" id="modalCode"></pre>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.37 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.4a16 16 0 0 0 5.69 5.69l.76-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+        </svg>
+        <strong>NewsXML</strong>
+      </div>
+      <div class="footer-tech">
+        XML &nbsp;·&nbsp; XSLT 1.0 &nbsp;·&nbsp; XPath &nbsp;·&nbsp; XSLTProcessor API &nbsp;·&nbsp; DOMParser
+      </div>
+      <div class="footer-copy">XML &amp; Web Services Lab Project · 2025</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

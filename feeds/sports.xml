@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsfeed>
+  <meta>
+    <feedTitle>Sports News Feed</feedTitle>
+    <category>Sports</category>
+    <source>NewsXML Aggregator v1.0</source>
+    <lastUpdated>2025-11-18</lastUpdated>
+    <totalArticles>5</totalArticles>
+  </meta>
+  <articles>
+    <article id="S001">
+      <title>India Wins ICC Cricket World Cup 2025 — Beats Australia by 6 Wickets</title>
+      <description>Team India clinched the ICC ODI World Cup 2025 at Eden Gardens, Kolkata. Rohit Sharma's blazing 134* and Bumrah's 4/32 sealed a historic 6-wicket win before 68,000 fans.</description>
+      <author>Harsha Bhogle</author>
+      <pubDate>Nov 18, 2025</pubDate>
+      <source>ESPNcricinfo</source>
+      <category>Sports</category>
+      <categoryIcon>⚽</categoryIcon>
+      <emoji>🏆</emoji>
+      <readTime>5 min read</readTime>
+      <tags><tag>Cricket</tag><tag>WorldCup</tag><tag>TeamIndia</tag></tags>
+    </article>
+    <article id="S002">
+      <title>Neeraj Chopra Shatters World Record with 92.5m Javelin in Zurich</title>
+      <description>Neeraj Chopra broke Jan Zelezny's 20-year world record with a stunning 92.5m throw at the Zurich Diamond League, becoming the first Indian to hold a track and field world record.</description>
+      <author>Atanu Das</author>
+      <pubDate>Nov 17, 2025</pubDate>
+      <source>TOI Sports</source>
+      <category>Sports</category>
+      <categoryIcon>⚽</categoryIcon>
+      <emoji>🏅</emoji>
+      <readTime>3 min read</readTime>
+      <tags><tag>Athletics</tag><tag>NeerajChopra</tag><tag>WorldRecord</tag></tags>
+    </article>
+    <article id="S003">
+      <title>Praggnanandhaa Becomes World Chess Champion at 20 — Beats Carlsen</title>
+      <description>R. Praggnanandhaa defeated Magnus Carlsen in a dramatic 14-game match to become the youngest World Chess Champion in history. India now holds both the Men's and Women's World Chess titles.</description>
+      <author>Viswanathan Anand</author>
+      <pubDate>Nov 16, 2025</pubDate>
+      <source>Chess.com India</source>
+      <category>Sports</category>
+      <categoryIcon>⚽</categoryIcon>
+      <emoji>♟️</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>Chess</tag><tag>Praggnanandhaa</tag><tag>India</tag></tags>
+    </article>
+    <article id="S004">
+      <title>Mumbai Indians Defend IPL 2025 Title in Super Over Thriller</title>
+      <description>Mumbai Indians captured their sixth IPL title in a Super Over final against RCB. Hardik Pandya's 68 runs and 3 wickets earned him the IPL 2025 Most Valuable Player award.</description>
+      <author>Sunil Gavaskar</author>
+      <pubDate>Nov 15, 2025</pubDate>
+      <source>BCCI Official</source>
+      <category>Sports</category>
+      <categoryIcon>⚽</categoryIcon>
+      <emoji>🏏</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>IPL</tag><tag>MumbaiIndians</tag><tag>Cricket</tag></tags>
+    </article>
+    <article id="S005">
+      <title>FIFA Awards India Hosting Rights for 2027 U-20 World Cup</title>
+      <description>FIFA awarded India the 2027 U-20 Football World Cup. Six stadiums across Bengaluru, Mumbai, Delhi, Kolkata, Hyderabad, and Guwahati will host 52 matches in India's second FIFA youth World Cup.</description>
+      <author>Sunil Chhetri</author>
+      <pubDate>Nov 14, 2025</pubDate>
+      <source>AIFF Official</source>
+      <category>Sports</category>
+      <categoryIcon>⚽</categoryIcon>
+      <emoji>⚽</emoji>
+      <readTime>3 min read</readTime>
+      <tags><tag>FIFA</tag><tag>Football</tag><tag>India</tag></tags>
+    </article>
+  </articles>
+</newsfeed>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsfeed>
+  <meta>
+    <feedTitle>World News Feed</feedTitle>
+    <category>World</category>
+    <source>NewsXML Aggregator v1.0</source>
+    <lastUpdated>2025-11-18</lastUpdated>
+    <totalArticles>5</totalArticles>
+  </meta>
+  <articles>
+    <article id="W001">
+      <title>COP31 Climate Summit Achieves Historic 1.5°C Binding Commitment</title>
+      <description>All G20 nations signed a legally binding agreement to limit global warming to 1.5°C, with a $100 billion annual climate fund for developing nations and coal phase-out by 2035.</description>
+      <author>Sarah Mitchell</author>
+      <pubDate>Nov 18, 2025</pubDate>
+      <source>BBC World</source>
+      <category>World</category>
+      <categoryIcon>🌍</categoryIcon>
+      <emoji>🌱</emoji>
+      <readTime>5 min read</readTime>
+      <tags><tag>Climate</tag><tag>COP31</tag><tag>G20</tag></tags>
+    </article>
+    <article id="W002">
+      <title>NASA-ISRO Mars Mission Successfully Enters Martian Orbit</title>
+      <description>Joint NASA-ISRO mission MARS-2025 achieved Martian orbit insertion after 7 months, carrying ground-penetrating radar to map subsurface water and advanced atmospheric spectrometers.</description>
+      <author>James Rodriguez</author>
+      <pubDate>Nov 17, 2025</pubDate>
+      <source>Reuters Science</source>
+      <category>World</category>
+      <categoryIcon>🌍</categoryIcon>
+      <emoji>🚀</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>Mars</tag><tag>NASA</tag><tag>ISRO</tag></tags>
+    </article>
+    <article id="W003">
+      <title>UN Adopts First Legally Binding Global AI Governance Treaty</title>
+      <description>All 193 UN member states unanimously adopted the Global AI Governance Framework, requiring national AI safety boards, algorithmic transparency, and a permanent ban on autonomous lethal weapons.</description>
+      <author>Emma Thompson</author>
+      <pubDate>Nov 16, 2025</pubDate>
+      <source>Al Jazeera</source>
+      <category>World</category>
+      <categoryIcon>🌍</categoryIcon>
+      <emoji>🤝</emoji>
+      <readTime>6 min read</readTime>
+      <tags><tag>AI</tag><tag>UnitedNations</tag><tag>Governance</tag></tags>
+    </article>
+    <article id="W004">
+      <title>Global Hunger Index 2025: 735 Million Face Acute Food Insecurity</title>
+      <description>The 2025 Global Hunger Index reveals 735 million people face acute food insecurity, with Sub-Saharan Africa and South Asia most affected by climate-related crop failures and ongoing conflicts.</description>
+      <author>Fatima Al-Hassan</author>
+      <pubDate>Nov 15, 2025</pubDate>
+      <source>The Guardian</source>
+      <category>World</category>
+      <categoryIcon>🌍</categoryIcon>
+      <emoji>🌾</emoji>
+      <readTime>5 min read</readTime>
+      <tags><tag>HungerIndex</tag><tag>FoodSecurity</tag><tag>Development</tag></tags>
+    </article>
+    <article id="W005">
+      <title>BRICS+ Expands to 15 Members, Launches Common Digital Trade Currency</title>
+      <description>BRICS+ now represents 15 nations and 46% of global GDP. The bloc launched BRICS Pay, a digital trade currency framework to reduce US dollar dependence in international commerce.</description>
+      <author>Chen Wei</author>
+      <pubDate>Nov 14, 2025</pubDate>
+      <source>Bloomberg</source>
+      <category>World</category>
+      <categoryIcon>🌍</categoryIcon>
+      <emoji>💱</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>BRICS</tag><tag>Economy</tag><tag>Currency</tag></tags>
+    </article>
+  </articles>
+</newsfeed>

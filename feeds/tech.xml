@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ═══════════════════════════════════════════════════════════
+  NewsXML — Technology News Feed
+  Schema:  newsfeed > meta + articles > article
+  Used by: XSLT transformer (news.xslt) via XSLTProcessor API
+  ═══════════════════════════════════════════════════════════
+-->
+<newsfeed>
+  <meta>
+    <feedTitle>Technology News Feed</feedTitle>
+    <category>Technology</category>
+    <source>NewsXML Aggregator v1.0</source>
+    <lastUpdated>2025-11-18</lastUpdated>
+    <totalArticles>5</totalArticles>
+  </meta>
+
+  <articles>
+
+    <article id="T001">
+      <title>Google DeepMind's Gemini 2.0 Breaks All Language Benchmarks</title>
+      <description>DeepMind's Gemini 2.0 surpassed every existing AI language model across MMLU, HumanEval, and reasoning benchmarks, reducing hallucinations by 60%.</description>
+      <author>Priya Sharma</author>
+      <pubDate>Nov 18, 2025</pubDate>
+      <source>TechCrunch India</source>
+      <category>Technology</category>
+      <categoryIcon>💻</categoryIcon>
+      <emoji>🤖</emoji>
+      <readTime>4 min read</readTime>
+      <tags>
+        <tag>AI</tag>
+        <tag>DeepMind</tag>
+        <tag>LLM</tag>
+      </tags>
+    </article>
+
+    <article id="T002">
+      <title>India Launches National Quantum Computing Mission — Rs 6,003 Cr</title>
+      <description>The Government of India launched the National Quantum Mission targeting 50–1000 qubit computers within 8 years, positioning India among the world's top five quantum nations.</description>
+      <author>Rahul Verma</author>
+      <pubDate>Nov 17, 2025</pubDate>
+      <source>NDTV Tech</source>
+      <category>Technology</category>
+      <categoryIcon>💻</categoryIcon>
+      <emoji>⚛️</emoji>
+      <readTime>3 min read</readTime>
+      <tags>
+        <tag>Quantum</tag>
+        <tag>India</tag>
+        <tag>MissionTech</tag>
+      </tags>
+    </article>
+
+    <article id="T003">
+      <title>Cybersecurity Threats Surge 45% in 2025 — CERT-In Annual Report</title>
+      <description>India's CERT-In reports a 45% rise in cyber incidents. Ransomware attacks targeting healthcare and banking doubled, with AI-powered phishing as the most common vector.</description>
+      <author>Ananya Singh</author>
+      <pubDate>Nov 16, 2025</pubDate>
+      <source>Indian Express Tech</source>
+      <category>Technology</category>
+      <categoryIcon>💻</categoryIcon>
+      <emoji>🔐</emoji>
+      <readTime>5 min read</readTime>
+      <tags>
+        <tag>Cybersecurity</tag>
+        <tag>CERT-In</tag>
+        <tag>Ransomware</tag>
+      </tags>
+    </article>
+
+    <article id="T004">
+      <title>Reliance Jio Launches 6G Pilot Network in Mumbai and Delhi</title>
+      <description>Reliance Jio began 6G pilot testing at terahertz bands, promising 1 Tbps speeds, with commercial rollout targeted for 2028 — ahead of the global ITU timeline.</description>
+      <author>Vikram Nair</author>
+      <pubDate>Nov 15, 2025</pubDate>
+      <source>Economic Times Tech</source>
+      <category>Technology</category>
+      <categoryIcon>💻</categoryIcon>
+      <emoji>📡</emoji>
+      <readTime>4 min read</readTime>
+      <tags>
+        <tag>6G</tag>
+        <tag>Jio</tag>
+        <tag>Telecom</tag>
+      </tags>
+    </article>
+
+    <article id="T005">
+      <title>Open Source Models Outperform GPT-4 on Code Generation — IIT Study</title>
+      <description>IIT Bombay confirms Llama 3.1 and Mistral-7B now surpass GPT-4 on code generation tasks in a 10,000-sample benchmark, democratizing advanced AI for all developers.</description>
+      <author>Dr. Meena Patel</author>
+      <pubDate>Nov 14, 2025</pubDate>
+      <source>The Hindu Tech</source>
+      <category>Technology</category>
+      <categoryIcon>💻</categoryIcon>
+      <emoji>👨‍💻</emoji>
+      <readTime>6 min read</readTime>
+      <tags>
+        <tag>OpenSource</tag>
+        <tag>LLaMA</tag>
+        <tag>Coding</tag>
+      </tags>
+    </article>
+
+  </articles>
+</newsfeed>

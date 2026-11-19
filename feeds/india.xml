@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsfeed>
+  <meta>
+    <feedTitle>India News Feed</feedTitle>
+    <category>India</category>
+    <source>NewsXML Aggregator v1.0</source>
+    <lastUpdated>2025-11-18</lastUpdated>
+    <totalArticles>5</totalArticles>
+  </meta>
+  <articles>
+    <article id="I001">
+      <title>India Becomes World's 3rd Largest Economy — GDP Surpasses Japan</title>
+      <description>India's GDP crossed $5.1 trillion, surpassing Japan and making India the world's third-largest economy. The IMF attributes this to manufacturing growth, the digital economy, and a 7%+ growth rate fueled by the demographic dividend.</description>
+      <author>Dr. Raghuram Rajan</author>
+      <pubDate>Nov 18, 2025</pubDate>
+      <source>RBI Publications</source>
+      <category>India</category>
+      <categoryIcon>🇮🇳</categoryIcon>
+      <emoji>🇮🇳</emoji>
+      <readTime>5 min read</readTime>
+      <tags><tag>Economy</tag><tag>GDP</tag><tag>IMF</tag></tags>
+    </article>
+    <article id="I002">
+      <title>NEP 2.0 Makes AI and Coding Mandatory from Class 6 Onwards</title>
+      <description>The National Education Policy 2.0 mandates AI, Coding, and Robotics as core subjects from Class 6, introduces a 5+3+3+4 academic structure, and replaces rote learning with competency-based assessments.</description>
+      <author>Dharmendra Pradhan</author>
+      <pubDate>Nov 17, 2025</pubDate>
+      <source>Ministry of Education</source>
+      <category>India</category>
+      <categoryIcon>🇮🇳</categoryIcon>
+      <emoji>📚</emoji>
+      <readTime>6 min read</readTime>
+      <tags><tag>Education</tag><tag>NEP</tag><tag>AI</tag></tags>
+    </article>
+    <article id="I003">
+      <title>Vande Bharat Express Network Crosses 500 Routes Pan-India</title>
+      <description>Indian Railways flagged off its 500th Vande Bharat route, connecting every state capital. The 350-train fleet at 160 km/h has cut average inter-city travel time by 40%, serving 2 million monthly passengers.</description>
+      <author>Ashwini Vaishnaw</author>
+      <pubDate>Nov 16, 2025</pubDate>
+      <source>Indian Railways Official</source>
+      <category>India</category>
+      <categoryIcon>🇮🇳</categoryIcon>
+      <emoji>🚄</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>Railways</tag><tag>VandeBharat</tag><tag>Infrastructure</tag></tags>
+    </article>
+    <article id="I004">
+      <title>India's Startup Ecosystem Hits 1.5 Lakh Startups — World No. 2</title>
+      <description>India's startup ecosystem crossed 1.5 lakh DPIIT-registered startups with 112 unicorns valued at $350 billion, making it the world's second-largest startup hub behind only the USA.</description>
+      <author>Piyush Goyal</author>
+      <pubDate>Nov 15, 2025</pubDate>
+      <source>DPIIT India</source>
+      <category>India</category>
+      <categoryIcon>🇮🇳</categoryIcon>
+      <emoji>🦄</emoji>
+      <readTime>5 min read</readTime>
+      <tags><tag>Startup</tag><tag>Unicorn</tag><tag>Innovation</tag></tags>
+    </article>
+    <article id="I005">
+      <title>Ayushman Bharat 2.0 Extends Free Healthcare to 70 Crore Citizens</title>
+      <description>The Union Cabinet expanded Ayushman Bharat PM-JAY to 70 crore citizens with Rs 10 lakh annual coverage per family, now including mental health, dental, and vision care for the first time.</description>
+      <author>Dr. Mansukh Mandaviya</author>
+      <pubDate>Nov 14, 2025</pubDate>
+      <source>Health Ministry India</source>
+      <category>India</category>
+      <categoryIcon>🇮🇳</categoryIcon>
+      <emoji>🏥</emoji>
+      <readTime>4 min read</readTime>
+      <tags><tag>Healthcare</tag><tag>AyushmanBharat</tag><tag>Government</tag></tags>
+    </article>
+  </articles>
+</newsfeed>
